@@ -1,0 +1,56 @@
+.details-banner {
+    display: flex;
+    margin-top: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 8px;
+    color: white;
+    position: relative;
+}
+
+.details-banner-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.details-banner-image {
+    width: 150px;
+    height: auto;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+.details-banner-content {
+    flex-grow: 1;
+}
+
+.details-banner-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.details-banner-description {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.banner-buttons {
+    display: flex;
+    gap: 16px;
+}
+
+.play-button,
+.info-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+}
