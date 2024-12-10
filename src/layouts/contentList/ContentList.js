@@ -44,6 +44,7 @@ const ContentList = ({ title, movies }) => {
       <div className="content-list-wrapper">
         <div
           className="scroll-arrow left-arrow"
+          onClick={scrollLeft}
           onMouseEnter={scrollLeft}
           tabIndex="0" // Make focusable
           onKeyDown={(event) => handleArrowKey(event, "left")}
@@ -66,6 +67,7 @@ const ContentList = ({ title, movies }) => {
         </div>
         <div
           className="scroll-arrow right-arrow"
+          onClick={scrollRight}
           onMouseEnter={scrollRight}
           tabIndex="0" // Make focusable
           onKeyDown={(event) => handleArrowKey(event, "right")}

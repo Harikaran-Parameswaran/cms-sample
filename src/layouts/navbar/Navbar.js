@@ -90,10 +90,10 @@ export const Navbar = () => {
             {/* Arrows */}
             {isHovered && (
                 <>
-                    <button className="arrow left-arrow" onClick={handlePrev}>
+                    <button className="arrow left-arrow" onClick={handlePrev} onMouseEnter={handlePrev}>
                         &lt;
                     </button>
-                    <button className="arrow right-arrow" onClick={handleNext}>
+                    <button className="arrow right-arrow" onClick={handleNext} onMouseEnter={handleNext}>
                         &gt;
                     </button>
                 </>
