@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./Navbar.css";
 import { LogogSVG } from "../../SVGIcons/LogoSVG";
-import { SearchSVG } from "../../SVGIcons/SearchSVG";
 import { useNavigate } from "react-router";
 
 const banners = [
@@ -35,7 +34,7 @@ export const Navbar = () => {
         if (!isHovered) {
             const interval = setInterval(() => {
                 setCurrentIndex((prevIndex) => (prevIndex + 1) % banners.length);
-            }, 3000); // Change every 3 seconds
+            }, 6000); // Change every 6 seconds
             return () => clearInterval(interval);
         }
     }, [isHovered]);
@@ -99,7 +98,7 @@ export const Navbar = () => {
                     </button>
                 </>
             )}
-            
+
             {/* Banner Section */}
             <div className="banner-slider">
                 <div

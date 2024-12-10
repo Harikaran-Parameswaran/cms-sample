@@ -278,6 +278,21 @@
     color: black;
 }
 
+.info-button:hover {
+    transform: scale(1.1);
+    outline: none;
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.7);
+    border: 1px solid rgba(255, 255, 255, 0.7);
+}
+
+.info-button:active, .info-button:focus {
+    transform: scale(1.1);
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.7);;
+    color: black;
+}
+
 .banner-slider {
     position: relative;
     width: 100%;

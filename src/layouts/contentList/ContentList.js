@@ -1,6 +1,6 @@
 import React, { useRef, useState } from "react";
 import Card from "../../components/card/Card";
-import DetailsBanner from "../../components/detilasBanner/DetailsBanner";
+import DetailsBanner from "../../components/detailsBanner/DetailsBanner";
 import "./ContentList.css";
 
 const ContentList = ({ title, movies }) => {
