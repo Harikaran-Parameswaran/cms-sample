@@ -1,0 +1,238 @@
+/* Membership Page Container */
+.membership-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+    background-color: #080808;
+    color: white;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 32px;
+    background: rgba(0, 0, 0, 0.6);
+    box-sizing: border-box;
+    color: white;
+}
+
+.logo-container {
+    align-self: flex-start;
+    cursor: pointer;
+}
+
+.membership-page-title {
+    text-align: center;
+    font-size: 24px;
+    margin: 2.5% 10% 2.5%;
+}
+
+.membership-title {
+    text-align: center;
+    font-size: 24px;
+    margin: 0 10% 2.5%;
+}
+
+.membership-subtitle {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 2.5%;
+    color: #b0c4de;
+}
+
+/* Membership Options */
+.membership-options {
+    display: flex;
+    /* flex-direction: column; */
+    gap: 32px;
+    /* max-width: 600px; */
+    margin-bottom: 2.5%;
+}
+
+/* Membership Card */
+.membership-card {
+    width: 50%;
+    border: 2px solid #444;
+    border-radius: 8px;
+    padding: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.membership-card:hover {
+    border-color: #fe9600;
+}
+
+.membership-card.selected {
+    border-color: #fe9600;
+    transform: scale(1.1);
+    background-color: #331f02;
+}
+
+/* Membership Header */
+.membership-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.membership-radio {
+    margin-right: 10px;
+}
+
+.membership-radio input {
+    display: none;
+}
+
+.membership-radio label {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+}
+
+.membership-radio input:checked+label {
+    background-color: #fe9600;
+    border-color: #fe9600;
+}
+
+/* Membership Prices */
+.membership-discounted-price {
+    font-size: 16px;
+    color: #00ff00;
+}
+
+.original-price {
+    text-decoration: line-through;
+    color: #999;
+}
+
+.membership-price {
+    font-size: 16px;
+    color: #b0c4de;
+}
+
+/* Membership Description */
+.membership-description {
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+.membership-description li {
+    margin-bottom: 5px;
+}
+
+.button-container {
+    display: flex;
+    width: 100%;
+    height: 10%;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.proceed-button {
+    padding: 8px 16px;
+    background-color: transparent;
+    font-size: 300;
+    color: #fe9600;
+    border: 1px solid #fe9600;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 10%;
+    height: 50.5%;
+}
+
+.proceed-button:hover {
+    transform: scale(1.1);
+}
+
+.proceed-button:active {
+    transform: scale(1.1);
+    background-color: #fe9600;
+    color: white;
+}
+
+.proceed-button:focus {
+    transform: scale(1.1);
+    background-color: #fe9600;
+    color: white;
+    outline: none;
+}
+
+.membership-disclaimer {
+    font-size: 12px;
+    color: #b0c4de;
+    text-align: center;
+}
+
+.membership-disclaimer p {
+    margin: 5px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+
+    .membership-page {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        background-color: #080808;
+        color: white;
+        height: max-content;
+    }
+
+    .membership-card {
+        padding: 15px;
+    }
+
+    .membership-options {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .membership-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .membership-page-title {
+        text-align: center;
+        font-size: 24px;
+        margin: 50% 10% 2.5%;
+    }
+
+    .membership-subtitle {
+        margin-bottom: 24px;
+        font-size: 16px;
+    }
+
+    .proceed-button {
+        padding: 8px 16px;
+        background-color: transparent;
+        font-size: 300;
+        color: #fe9600;
+        border: 1px solid #fe9600;
+        border-radius: 4px;
+        cursor: pointer;
+        width: 50%;
+        margin-top: 16px;
+        height: 50.5%;
+    }
+}
