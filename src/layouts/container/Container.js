@@ -59,11 +59,70 @@ const Container = () => {
       ]
       ;
 
+      const tvChannels = [
+        {
+            "title": "TV 100",
+            "image": "/assets/TVChannels/TV-100-card.png"
+        },
+        {
+            "title": "Turknews",
+            "image": "/assets/TVChannels/turknews-card.png"
+        },
+        {
+            "title": "TLC",
+            "image": "/assets/TVChannels/TLC-card.png"
+        },
+        {
+            "title": "Show TV",
+            "image": "/assets/TVChannels/SHow-TV-card.png"
+        },
+        {
+            "title": "Now",
+            "image": "/assets/TVChannels/Now-card.png"
+        },
+        {
+            "title": "Cinema TV 2",
+            "image": "/assets/TVChannels/Cinema-TV-2-card.png"
+        },
+        {
+            "title": "National Geographic Wild",
+            "image": "/assets/TVChannels/National-Geographic-card.png"
+        },
+        {
+            "title": "FX",
+            "image": "/assets/TVChannels/FX-card.png"
+        },
+        {
+            "title": "Ekol TV",
+            "image": "/assets/TVChannels/Ekol-TV-card.png"
+        },
+        {
+            "title": "CNN Turk",
+            "image": "/assets/TVChannels/CNN-Turk-card.png"
+        },
+        {
+            "title": "CNN International",
+            "image": "/assets/TVChannels/CNN-International-card.png"
+        },
+        {
+            "title": "CNBC E",
+            "image": "/assets/TVChannels/CNBC-E-card.png"
+        },
+        {
+            "title": "Cinema TV",
+            "image": "/assets/TVChannels/Cinema-TV-2-card.png"
+        },
+        {
+            "title": "Cartoon Network",
+            "image": "/assets/TVChannels/Cartoon-Network-card.png"
+        },
+      ]
     return (
         <div className="container">
             <Navbar />
             <ContentList title="Popular Movies" movies={movies} />
             <ContentList title="Top Picks for You" movies={movies} />
+            <ContentList title='TV Channels' movies={tvChannels} />
         </div>
     );
 };

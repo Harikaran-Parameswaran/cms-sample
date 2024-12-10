@@ -4,4 +4,11 @@
     /* gap: 24px; */
     /* height: 100vh; */
     background-color: #080808;
+    overflow: auto; /* Enable scrolling */
+    scrollbar-width: none; /* For Firefox */
+    -ms-overflow-style: none;
+}
+
+.container::-webkit-scrollbar {
+    display: none; /* For Chrome, Safari, and other WebKit-based browsers */
 }

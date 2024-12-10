@@ -50,6 +50,19 @@ export const Navbar = () => {
         );
     };
 
+    const handleKeyDown = (event, index) => {
+        if (event.key === "Enter") {
+            // Perform the action when Enter is pressed on a focused banner item
+            setCurrentIndex(index);
+        } else if (event.key === "ArrowLeft") {
+            // Move to the previous banner
+            handlePrev();
+        } else if (event.key === "ArrowRight") {
+            // Move to the next banner
+            handleNext();
+        }
+    };
+
     return (
         <div
             className="navbar-container"
@@ -62,12 +75,12 @@ export const Navbar = () => {
                     <LogogSVG />
                 </div>
                 <div className="search-field-buttons">
-                    <div className="navbar-search">
+                    {/* <div className="navbar-search">
                         <input type="text" placeholder="Search..." />
                         <div className="search-icon">
                             <SearchSVG />
                         </div>
-                    </div>
+                    </div> */}
                     <div className="navbar-buttons">
                         <button className="member-button" onClick={() => navigate('/qr')} >Become a Member</button>
                         <button className="login-button" onClick={() => navigate('/login')}>Log In</button>
@@ -75,6 +88,18 @@ export const Navbar = () => {
                 </div>
             </div>
 
+            {/* Arrows */}
+            {isHovered && (
+                <>
+                    <button className="arrow left-arrow" onClick={handlePrev}>
+                        &lt;
+                    </button>
+                    <button className="arrow right-arrow" onClick={handleNext}>
+                        &gt;
+                    </button>
+                </>
+            )}
+            
             {/* Banner Section */}
             <div className="banner-slider">
                 <div
@@ -89,6 +114,8 @@ export const Navbar = () => {
                             key={index}
                             className="banner-item"
                             style={{ backgroundImage: `url(${banner.image})` }}
+                            tabIndex="0"
+                            onKeyDown={(event) => handleKeyDown(event, index)}
                         >
                             <div className="banner-overlay">
                                 <div className="banner-content">
@@ -104,17 +131,6 @@ export const Navbar = () => {
                     ))}
                 </div>
 
-                {/* Arrows */}
-                {isHovered && (
-                    <>
-                        <button className="arrow left-arrow" onClick={handlePrev}>
-                            &lt;
-                        </button>
-                        <button className="arrow right-arrow" onClick={handleNext}>
-                            &gt;
-                        </button>
-                    </>
-                )}
 
                 {/* Pagination Dots */}
                 {isHovered && (

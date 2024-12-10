@@ -20,7 +20,7 @@
     display: flex;
     overflow-x: hidden;
     padding: 20px;
-    gap: 10px;
+    gap: 24px;
     scroll-behavior: smooth;
 }
 

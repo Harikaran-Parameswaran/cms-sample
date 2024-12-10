@@ -79,7 +79,15 @@ form input:focus {
 }
 
 .form-button:hover {
-    background-color:#271802;
+    transform: scale(1.1);
+}
+
+.form-button:active, .form-button:focus {
+    background-color: transparent;
+    color: #fe9600;
+    border: 1px solid #fe9600;
+    transform: scale(1.1);
+    outline: none;
 }
 
 /* Toggle Message */

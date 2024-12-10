@@ -54,3 +54,26 @@
     cursor: pointer;
     font-size: 1rem;
 }
+
+.play-button:hover {
+    background-color: #e58c00;
+    color: white;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.3);
+    transform: scale(1.1);
+}
+
+.play-button:active {
+    background-color: transparent;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: #fe9600;
+    border: 1px solid #fe9600;
+    transform: scale(1.1);
+}
+
+.play-button:focus {
+    background-color: transparent;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: #fe9600;
+    border: 1px solid #fe9600;
+    transform: scale(1.1);
+}
